@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Markazi+Text:wght@400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="result">
+            <div class="inline">
+                <input id="result" type="text" readonly value="">
+                <button type="button" id="copy"><ion-icon name="copy-outline"></ion-icon></button>
+            </div>
+        </div>
+        <div class="range">
+            <input type="range" id="length" value="10" min="5" max="16" value="10">
+            <p id="text">Password Length</p>
+        </div>
+        <div class="inputs">
+             <input type="checkbox" id="input1" class="inputs">UpperCase Leter(A-Z)
+             <br>
+            <input type="checkbox" id="input2" class="inputs">LowerCase Letter(a-z)
+            <br>
+            <input type="checkbox" id="input3" class="inputs">Special Symbols(@#&$*!^)
+            <br>
+            <input type="checkbox" id="input4" class="inputs">Numbers(0-9)
+        </div>
+        <div class="password">
+            <button type="button" id="generate">Generate Password</button>
+        </div>
+        <div class="message">
+
+        </div>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
+
+</html>
